@@ -1,7 +1,5 @@
 ---
-title: "Acompañamiento técnico para tu equipo de desarrollo"
-description: "Ayudamos a líderes técnicos a mejorar las prácticas de su equipo para acelerar la entrega de software y eliminar los bugs."
-date: 2020-07-19T16:14:05+02:00
+title: "La plataforma que conecta los e-sports"
+description: "Conectamos jugadores y profesionales que buscan equipos de e-sports con los mejores clubs."
+date: 2023-08-18T00:00:00+02:00
 ---
-
-Sample content

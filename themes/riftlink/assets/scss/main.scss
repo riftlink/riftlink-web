@@ -1,10 +1,12 @@
-$body-bg: #1E1E1E;
+$body-bg: #0A0A0A;
 $theme-colors: (
   "primary": #FF0B45,
   "secondary": #25E1BB,
   "dark": $body-bg,
   "light": #DDDDDD
 );
+$text-color-light-gray: #EEEEEE;
+$link-color: $text-color-light-gray;
 
 @import "bootstrap/bootstrap";
 
@@ -15,6 +17,11 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   font-family: 'Roboto';
+  color: $text-color-light-gray
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 .btn {
@@ -37,9 +44,6 @@ body {
 
 .jumbotron p:last-child {
   margin-bottom: 0; }
-
-.jumbotron-heading {
-  font-weight: 300; }
 
 .jumbotron .container {
   max-width: 40rem; }

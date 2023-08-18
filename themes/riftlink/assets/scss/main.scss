@@ -1,6 +1,7 @@
 $body-bg: #0A0A0A;
+$primary-color: #FF0B45;
 $theme-colors: (
-  "primary": #FF0B45,
+  "primary": $primary-color,
   "secondary": #25E1BB,
   "dark": $body-bg,
   "light": #DDDDDD
@@ -14,25 +15,54 @@ $link-color: $text-color-light-gray;
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   font-family: 'Roboto';
   color: $text-color-light-gray
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
+}
+
+p.lead {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .btn {
   text-transform: uppercase;
+  font-weight: 450;
+  padding: 0.75rem 1.5rem;
+}
+
+section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+main > section:first-child {
+  padding-top: 20rem;
+}
+
+main > section:last-child {
+  padding-bottom: 20rem;
+}
+
+.borderline {
+  border-color: $primary-color;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1rem;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* Jumbotron
 ------------------------- */
 .jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   margin-bottom: 0;
   background-color: unset;
 }
@@ -45,14 +75,12 @@ h1 {
 .jumbotron p:last-child {
   margin-bottom: 0; }
 
-.jumbotron .container {
-  max-width: 40rem; }
 
 /* Featurettes
 ------------------------- */
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: -.05rem; }
 
@@ -65,3 +93,9 @@ h1 {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem; } }
+
+footer {
+  border-top: $primary-color;
+  border-top-width: 1px;
+  border-top-style: solid;
+}

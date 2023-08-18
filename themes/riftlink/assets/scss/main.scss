@@ -1,64 +1,49 @@
+@import "bootstrap/bootstrap";
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #5a5a5a;
-}
+  color: #5a5a5a; }
 
 /* Jumbotron
 ------------------------- */
-
 .jumbotron {
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-bottom: 0;
-  background-color: #fff;
-}
+  background-color: #fff; }
+
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
+    padding-bottom: 6rem; } }
 
 .jumbotron p:last-child {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 .jumbotron-heading {
-  font-weight: 300;
-}
+  font-weight: 300; }
 
 .jumbotron .container {
-  max-width: 40rem;
-}
-
+  max-width: 40rem; }
 
 /* Featurettes
 ------------------------- */
-
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -.05rem;
-}
-
+  letter-spacing: -.05rem; }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
 @media (min-width: 40em) {
   .featurette-heading {
-    font-size: 50px;
-  }
-}
+    font-size: 50px; } }
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
-  }
-}
+    margin-top: 7rem; } }

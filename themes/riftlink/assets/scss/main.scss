@@ -48,11 +48,27 @@ main > section:last-child {
   padding-bottom: 20rem;
 }
 
-.borderline {
+div.outline-container {
+  position: relative;
+}
+
+div.outline {
+  display: block;
   border-color: $primary-color;
+  position: absolute;
+  border-width: 4px;
+  width: 10em;
   border-width: 1px;
+  border-radius: 2rem;
   border-style: solid;
-  border-radius: 1rem;
+  top: -20%;
+  right: -20%;
+  width: 140%;
+  height: 140%;
+}
+
+.borderline {
+  
 }
 
 footer {

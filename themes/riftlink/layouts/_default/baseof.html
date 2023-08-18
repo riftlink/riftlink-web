@@ -2,53 +2,15 @@
 <html lang="{{ .Language.Lang }}">
   {{- partial "head.html" . -}}
 
-  {{ define "nav-items" }}
-	  {{- partial "navbar.html" . -}}
-  {{ end }}
-
   <body>
-    <nav class="dark navbar navbar-expand-lg navbar-dark navbar-shrink">
-      <div class="container">
-        <a href="/" class="navbar-brand">
-          <img src="/assets/img/logo-exeal-header.svg" alt="Exeal"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav ml-auto">
-            {{- block "nav-items" . }}{{- end }}
-          </ul>
-        </div>
-      </div>
-    </nav>
-    {{- block "main" . }}{{- end }}
+    {{- partial "header.html" . -}}
+    
+    <main role="main">
+      {{- block "main" . }}{{- end }}
+    </main>
 
     {{- partial "footer.html" . -}}
 
     {{- partial "javascript.html" . -}}
-
-
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#efefef",
-      "text": "#404040"
-    },
-    "button": {
-      "background": "#8ec760",
-      "text": "#ffffff"
-    }
-  },
-  "content": {
-    "message": "Este sitio web utiliza cookies propias y de terceros para obtener estadísticas sobre los hábitos de navegación del usuario, mejorar su experiencia y permitirle compartir contenidos en redes sociales.",
-    "dismiss": "Aceptar",
-    "link": "Puede encontrar toda la información en nuestra Política de Cookies.",
-    "href": "/legal/cookie-policy/"
-  }
-});
-</script>
   </body>
 </html>

@@ -1,0 +1,6 @@
+title: Riftlink
+theme: riftlink
+baseURL: https://www.riftlink.gg
+languageCode: es-es
+defaultContentLanguage: es
+metaDataFormat: yaml

@@ -1,6 +1,9 @@
-$body-bg: #000000;
+$body-bg: #1E1E1E;
 $theme-colors: (
-  "primary": #FF0B45
+  "primary": #FF0B45,
+  "secondary": #25E1BB,
+  "dark": $body-bg,
+  "light": #DDDDDD
 );
 
 @import "bootstrap/bootstrap";
@@ -11,7 +14,11 @@ $theme-colors: (
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #5a5a5a; }
+}
+
+.btn {
+  text-transform: uppercase;
+}
 
 /* Jumbotron
 ------------------------- */
@@ -19,7 +26,7 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-bottom: 0;
-  background-color: #fff; }
+}
 
 @media (min-width: 768px) {
   .jumbotron {

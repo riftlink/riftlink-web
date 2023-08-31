@@ -67,5 +67,5 @@ jobs:
           to: 's3://riftlink-web'
           arguments: |
             --cache-control "no-cache" \
-            --include "*.html" \
+            --include *.html \
             --exclude "*"

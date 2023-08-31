@@ -7,7 +7,7 @@ workflows:
   build-deploy:
     jobs:
       - install-deps
-      - build
+      - build:
           requires:
             - install-deps
       - deploy:

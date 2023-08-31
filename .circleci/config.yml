@@ -1,0 +1,41 @@
+version: 2.1
+
+orbs:
+  aws-s3: circleci/aws-s3@2.0.0
+
+workflows:
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: main
+
+jobs:
+  build:
+    docker:
+      - image: cimg/hugo:1.3.0
+    steps:
+      - checkout
+      - run:
+          name: Build the application
+          command: HUGO_ENV=production hugo --minify --verbose
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public
+  deploy:
+    docker:
+      - image: cimg/node:20.5.0
+    steps:
+      - attach_workspace:
+          at: .
+      - aws-s3/sync:
+          from: public
+          to: 's3://riftlink-web'
+          arguments: |
+            --cache-control "max-age=86400" \
+            --delete

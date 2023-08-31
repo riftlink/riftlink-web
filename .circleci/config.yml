@@ -60,4 +60,12 @@ jobs:
           to: 's3://riftlink-web'
           arguments: |
             --cache-control "max-age=86400" \
-            --delete
+            --delete \
+            --exclude *.html
+      - aws-s3/sync:
+          from: public
+          to: 's3://riftlink-web'
+          arguments: |
+            --cache-control "no-cache" \
+            --include *.html \
+            --exclude *

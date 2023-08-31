@@ -4,6 +4,8 @@ baseURL: https://www.riftlink.gg
 languageCode: es-es
 defaultContentLanguage: es
 metaDataFormat: yaml
+params:
+  appUrl: https://app.riftlink.gg
 
 module:
   mounts:

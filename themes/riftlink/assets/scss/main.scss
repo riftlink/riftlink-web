@@ -1,8 +1,9 @@
 $body-bg: #0A0A0A;
 $primary-color: #FF0B45;
+$secondary-color: #25E1BB;
 $theme-colors: (
   "primary": $primary-color,
-  "secondary": #25E1BB,
+  "secondary": $secondary-color,
   "dark": $body-bg,
   "light": #DDDDDD
 );
@@ -114,4 +115,8 @@ footer {
   border-top: $primary-color;
   border-top-width: 1px;
   border-top-style: solid;
+}
+
+h4 {
+  color: $secondary-color
 }
